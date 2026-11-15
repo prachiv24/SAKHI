@@ -439,4 +439,3 @@ $$;
 -- column (no separate backfill script needed), but refresh planner stats
 -- after running this migration against an already-populated table:
 -- analyze scheme_documents;
-
