@@ -1,0 +1,3 @@
+"mode","persona","scheme","expected","classifier_label","response_text","your_label (eligible / not eligible / unclear)"
+"v1r","sunita","pmuy","eligible","eligible","Yes. You are eligible because you are female, at least 18 years old, and possess a BPL card.",""
+"v1r","sunita","up-widow-pension","eligible","eligible","Yes. You are eligible because you are a widow, female, at least 18, living in Uttar Pradesh, and your annual income is strictly below Rs 2,00,000.",""

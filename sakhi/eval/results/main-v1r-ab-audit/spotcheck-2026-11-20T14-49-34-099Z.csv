@@ -1,0 +1,3 @@
+"mode","persona","scheme","expected","classifier_label","response_text","your_label (eligible / not eligible / unclear)"
+"v1r","sunita","up-widow-pension","eligible","eligible","Yes. You meet all the required criteria for the UP Widow Pension: you are a widow, female, live in Uttar Pradesh, have an annual income strictly below Rs 2,00,000 (Rs 80,000), and are at least 18 years old (31).",""
+"v1r","sunita","pmuy","eligible","eligible","Yes. You are eligible for the Pradhan Mantri Ujjwala Yojana (PMUY) because you are a female, aged 18 or older (31), and possess a BPL card.",""

@@ -1,0 +1,780 @@
+[
+  {
+    "id": "x_dis_45_d_bpl_f",
+    "edge": "disabled woman with BPL",
+    "focusSchemes": [
+      "igndps"
+    ],
+    "profile": {
+      "name": "Asha",
+      "age": 45,
+      "gender": "female",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 120000,
+      "bplCard": true,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": true,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "igndps",
+        "pmuy",
+        "ab-pmjay"
+      ],
+      "ineligible": [
+        "ignoaps",
+        "up-widow-pension",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc"
+      ]
+    }
+  },
+  {
+    "id": "x_married_up_f",
+    "edge": "married woman in UP, low income",
+    "focusSchemes": [
+      "up-widow-pension"
+    ],
+    "profile": {
+      "name": "Bharat",
+      "age": 40,
+      "gender": "female",
+      "maritalStatus": "married",
+      "state": "Uttar Pradesh",
+      "incomeAnnual": 80000,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "pm-sym"
+      ],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "nsp-post-matric-sc",
+        "ab-pmjay"
+      ]
+    }
+  },
+  {
+    "id": "x_pmuy_m30_bpl",
+    "edge": "man 30, BPL: scheme is for women",
+    "focusSchemes": [
+      "pmuy"
+    ],
+    "profile": {
+      "name": "Chitra",
+      "age": 30,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 120000,
+      "bplCard": true,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "pm-sym",
+        "ab-pmjay"
+      ],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "nsp-post-matric-sc"
+      ]
+    }
+  },
+  {
+    "id": "x_kisan_student",
+    "edge": "student, no land",
+    "focusSchemes": [
+      "pm-kisan"
+    ],
+    "profile": {
+      "name": "Deepak",
+      "age": 20,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 120000,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "student",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "pm-sym"
+      ],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "nsp-post-matric-sc",
+        "ab-pmjay"
+      ]
+    }
+  },
+  {
+    "id": "x_sym_inc_180001",
+    "edge": "PM-SYM income 180001, age 30",
+    "focusSchemes": [
+      "pm-sym"
+    ],
+    "profile": {
+      "name": "Esha",
+      "age": 30,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 180001,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc",
+        "ab-pmjay"
+      ]
+    }
+  },
+  {
+    "id": "x_sc_zero",
+    "edge": "SC, zero income",
+    "focusSchemes": [
+      "nsp-post-matric-sc"
+    ],
+    "profile": {
+      "name": "Farhan",
+      "age": 21,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 0,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "student",
+      "socialCategory": "SC",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "pm-sym",
+        "nsp-post-matric-sc"
+      ],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "ab-pmjay"
+      ]
+    }
+  },
+  {
+    "id": "x_pmjay_71_nobpl",
+    "edge": "71, no BPL",
+    "focusSchemes": [
+      "ab-pmjay"
+    ],
+    "profile": {
+      "name": "Geeta",
+      "age": 71,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 120000,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "ab-pmjay"
+      ],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc"
+      ]
+    }
+  },
+  {
+    "id": "x_combo_sc_woman_farmer",
+    "edge": "SC woman farmer, BPL",
+    "focusSchemes": [
+      "pm-kisan",
+      "pmuy",
+      "nsp-post-matric-sc"
+    ],
+    "profile": {
+      "name": "Harish",
+      "age": 45,
+      "gender": "female",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 120000,
+      "bplCard": true,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": true,
+      "occupation": "farmer",
+      "socialCategory": "SC",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "pmuy",
+        "pm-kisan",
+        "nsp-post-matric-sc",
+        "ab-pmjay"
+      ],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pm-sym"
+      ]
+    }
+  },
+  {
+    "id": "x_none_student_gen",
+    "edge": "General student, 4,00,000",
+    "focusSchemes": [
+      "ignoaps",
+      "igndps",
+      "pm-kisan"
+    ],
+    "profile": {
+      "name": "Indu",
+      "age": 20,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 400000,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "student",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc",
+        "ab-pmjay"
+      ]
+    }
+  },
+  {
+    "id": "x_oldage_70_nobpl",
+    "edge": "70, no BPL: pension fails, AB-PMJAY age route holds",
+    "focusSchemes": [
+      "ignoaps"
+    ],
+    "profile": {
+      "name": "Jatin",
+      "age": 70,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 120000,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "ab-pmjay"
+      ],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc"
+      ]
+    }
+  },
+  {
+    "id": "x_dis_17_d_bpl",
+    "edge": "disabled, one year below minimum age",
+    "focusSchemes": [
+      "igndps"
+    ],
+    "profile": {
+      "name": "Kavita",
+      "age": 17,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 120000,
+      "bplCard": true,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": true,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "ab-pmjay"
+      ],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc"
+      ]
+    }
+  },
+  {
+    "id": "x_widow_up_inc200001",
+    "edge": "widow, UP, just over limit",
+    "focusSchemes": [
+      "up-widow-pension"
+    ],
+    "profile": {
+      "name": "Lokesh",
+      "age": 50,
+      "gender": "female",
+      "maritalStatus": "widow",
+      "state": "Uttar Pradesh",
+      "incomeAnnual": 200001,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc",
+        "ab-pmjay"
+      ]
+    }
+  },
+  {
+    "id": "x_pmuy_f62_bpl",
+    "edge": "woman 62, BPL (also old-age eligible)",
+    "focusSchemes": [
+      "pmuy"
+    ],
+    "profile": {
+      "name": "Meena",
+      "age": 62,
+      "gender": "female",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 120000,
+      "bplCard": true,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "ignoaps",
+        "pmuy",
+        "ab-pmjay"
+      ],
+      "ineligible": [
+        "igndps",
+        "up-widow-pension",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc"
+      ]
+    }
+  },
+  {
+    "id": "x_kisan_land_f",
+    "edge": "woman farmer with land",
+    "focusSchemes": [
+      "pm-kisan"
+    ],
+    "profile": {
+      "name": "Naveen",
+      "age": 38,
+      "gender": "female",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 120000,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": true,
+      "occupation": "farmer",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "pm-kisan",
+        "pm-sym"
+      ],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "nsp-post-matric-sc",
+        "ab-pmjay"
+      ]
+    }
+  },
+  {
+    "id": "x_sym_inc_200000",
+    "edge": "PM-SYM income 200000, age 30",
+    "focusSchemes": [
+      "pm-sym"
+    ],
+    "profile": {
+      "name": "Omi",
+      "age": 30,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 200000,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc",
+        "ab-pmjay"
+      ]
+    }
+  },
+  {
+    "id": "x_sc_inc900k",
+    "edge": "SC, high income",
+    "focusSchemes": [
+      "nsp-post-matric-sc"
+    ],
+    "profile": {
+      "name": "Pooja",
+      "age": 24,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 900000,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "student",
+      "socialCategory": "SC",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc",
+        "ab-pmjay"
+      ]
+    }
+  },
+  {
+    "id": "x_pmjay_69_nobpl",
+    "edge": "69 without BPL",
+    "focusSchemes": [
+      "ab-pmjay"
+    ],
+    "profile": {
+      "name": "Qadir",
+      "age": 69,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 120000,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc",
+        "ab-pmjay"
+      ]
+    }
+  },
+  {
+    "id": "x_combo_widow66",
+    "edge": "elderly widow, UP, BPL",
+    "focusSchemes": [
+      "up-widow-pension",
+      "ignoaps",
+      "pmuy"
+    ],
+    "profile": {
+      "name": "Rekha",
+      "age": 66,
+      "gender": "female",
+      "maritalStatus": "widow",
+      "state": "Uttar Pradesh",
+      "incomeAnnual": 40000,
+      "bplCard": true,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "ignoaps",
+        "up-widow-pension",
+        "pmuy",
+        "ab-pmjay"
+      ],
+      "ineligible": [
+        "igndps",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc"
+      ]
+    }
+  },
+  {
+    "id": "x_none_man45",
+    "edge": "man 45, 10,00,000",
+    "focusSchemes": [
+      "ignoaps",
+      "igndps",
+      "pm-kisan"
+    ],
+    "profile": {
+      "name": "Suresh",
+      "age": 45,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 1000000,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "salaried",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "urban"
+    },
+    "expected": {
+      "eligible": [],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc",
+        "ab-pmjay"
+      ]
+    }
+  },
+  {
+    "id": "x_oldage_61_bpl",
+    "edge": "one year above cut-off, BPL",
+    "focusSchemes": [
+      "ignoaps"
+    ],
+    "profile": {
+      "name": "Tara",
+      "age": 61,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 120000,
+      "bplCard": true,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": false,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "ignoaps",
+        "ab-pmjay"
+      ],
+      "ineligible": [
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "pm-sym",
+        "nsp-post-matric-sc"
+      ]
+    }
+  },
+  {
+    "id": "x_dis_30_d_nobpl",
+    "edge": "disabled adult without BPL",
+    "focusSchemes": [
+      "igndps"
+    ],
+    "profile": {
+      "name": "Uday",
+      "age": 30,
+      "gender": "male",
+      "maritalStatus": "married",
+      "state": "Bihar",
+      "incomeAnnual": 120000,
+      "bplCard": false,
+      "aadhaarLinked": true,
+      "dependents": 2,
+      "landOwned": false,
+      "occupation": "unemployed",
+      "socialCategory": "General",
+      "disability": true,
+      "residenceType": "rural"
+    },
+    "expected": {
+      "eligible": [
+        "pm-sym"
+      ],
+      "ineligible": [
+        "ignoaps",
+        "igndps",
+        "up-widow-pension",
+        "pmuy",
+        "pm-kisan",
+        "nsp-post-matric-sc",
+        "ab-pmjay"
+      ]
+    }
+  }
+]

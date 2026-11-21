@@ -1,0 +1,38 @@
+{
+  "personas": 100,
+  "labelledPairs": 800,
+  "eligiblePairs": 136,
+  "focusQuestions": 126,
+  "parts": [
+    {
+      "part": 1,
+      "personas": 21,
+      "questionsPerArchitecture": 84,
+      "llmCallsAllThree": 252
+    },
+    {
+      "part": 2,
+      "personas": 21,
+      "questionsPerArchitecture": 84,
+      "llmCallsAllThree": 252
+    },
+    {
+      "part": 3,
+      "personas": 21,
+      "questionsPerArchitecture": 84,
+      "llmCallsAllThree": 252
+    },
+    {
+      "part": 4,
+      "personas": 21,
+      "questionsPerArchitecture": 84,
+      "llmCallsAllThree": 252
+    },
+    {
+      "part": 5,
+      "personas": 16,
+      "questionsPerArchitecture": 64,
+      "llmCallsAllThree": 192
+    }
+  ]
+}

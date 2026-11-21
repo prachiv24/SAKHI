@@ -1,0 +1,58 @@
+{
+  "records": [
+    {
+      "mode": "v1r",
+      "personaId": "sunita",
+      "edge": "clear positive: widow pension + Ujjwala",
+      "schemeKey": "pmuy",
+      "schemeName": "Pradhan Mantri Ujjwala Yojana",
+      "expected": true,
+      "latencyMs": 2921,
+      "attempts": 1,
+      "usedFallbackModel": null,
+      "error": null,
+      "quotaHit": false,
+      "responseText": "Yes. You are eligible because you are female, at least 18 years old, and possess a BPL card.",
+      "classification": true,
+      "correct": true
+    },
+    {
+      "mode": "v1r",
+      "personaId": "sunita",
+      "edge": "clear positive: widow pension + Ujjwala",
+      "schemeKey": "up-widow-pension",
+      "schemeName": "Vidhwa Pension Yojana (Widow Pension)",
+      "expected": true,
+      "latencyMs": 2931,
+      "attempts": 1,
+      "usedFallbackModel": null,
+      "error": null,
+      "quotaHit": false,
+      "responseText": "Yes. You are eligible because you are a widow, female, at least 18, living in Uttar Pradesh, and your annual income is strictly below Rs 2,00,000.",
+      "classification": true,
+      "correct": true
+    }
+  ],
+  "summary": {
+    "v1r": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1,
+      "unclear": 0,
+      "errors": 0,
+      "p50LatencyMs": 2931,
+      "p95LatencyMs": 2931,
+      "confusion": {
+        "truePositive": 2,
+        "falsePositive": 0,
+        "trueNegative": 0,
+        "falseNegative": 0
+      }
+    }
+  },
+  "engineCheck": {
+    "checked": 8,
+    "agree": 8,
+    "mismatches": []
+  }
+}

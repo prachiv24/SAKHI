@@ -1,0 +1,59 @@
+{
+  "records": [
+    {
+      "mode": "v1r",
+      "personaId": "sunita",
+      "edge": "clear positive: widow pension + Ujjwala",
+      "schemeKey": "up-widow-pension",
+      "schemeName": "Vidhwa Pension Yojana (Widow Pension)",
+      "expected": true,
+      "latencyMs": 9885,
+      "attempts": 1,
+      "usedFallbackModel": null,
+      "error": null,
+      "quotaHit": false,
+      "responseText": "Yes. You meet all the required criteria for the UP Widow Pension: you are a widow, female, live in Uttar Pradesh, have an annual income strictly below Rs 2,00,000 (Rs 80,000), and are at least 18 years old (31).",
+      "classification": true,
+      "correct": true
+    },
+    {
+      "mode": "v1r",
+      "personaId": "sunita",
+      "edge": "clear positive: widow pension + Ujjwala",
+      "schemeKey": "pmuy",
+      "schemeName": "Pradhan Mantri Ujjwala Yojana",
+      "expected": true,
+      "latencyMs": 10081,
+      "attempts": 1,
+      "usedFallbackModel": null,
+      "error": null,
+      "quotaHit": false,
+      "responseText": "Yes. You are eligible for the Pradhan Mantri Ujjwala Yojana (PMUY) because you are a female, aged 18 or older (31), and possess a BPL card.",
+      "classification": true,
+      "correct": true
+    }
+  ],
+  "summary": {
+    "v1r": {
+      "total": 2,
+      "correct": 2,
+      "accuracy": 1,
+      "unclear": 0,
+      "errors": 0,
+      "p50LatencyMs": 10081,
+      "p95LatencyMs": 10081,
+      "confusion": {
+        "truePositive": 2,
+        "falsePositive": 0,
+        "trueNegative": 0,
+        "falseNegative": 0
+      }
+    }
+  },
+  "engineCheck": {
+    "checked": 7,
+    "skipped": 1,
+    "agree": 7,
+    "mismatches": []
+  }
+}
